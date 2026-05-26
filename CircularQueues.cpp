@@ -94,3 +94,13 @@ public:
             }
             cout << endl;
         } 
+          else 
+        {
+            // jika FRONT > REAR, iterasi dari FRONT hingga akhir array, lalu dari awal array hingga REAR
+            while (FRONT_Position <= max - 1) 
+            {
+                cout << queue_array[FRONT_Position] << " ";
+                FRONT_Position++;
+            }
+
+            FRONT_Position = 0;
